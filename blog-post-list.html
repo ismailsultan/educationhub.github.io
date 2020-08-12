@@ -16,7 +16,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">EDUCATION HUB</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html">EDUCATION HUB</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -51,6 +51,22 @@
             </div>
         </section>
     </main>
+
+    <script>
+        (function(d,t) {
+          var BASE_URL = "https://app.chatwoot.com";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src= BASE_URL + "/packs/js/sdk.js";
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'D3K9z7at19kCZUARbcPa5JsK',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");
+      </script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
